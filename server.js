@@ -28,20 +28,32 @@ app.get("/books", (req, res) => {
     {
       _id: "1",
       title: "The Alchemist",
+      isbn: "9780061122415",
       author: "Paulo Coelho",
-      price: 299
+      totalCopies: 10,
+      genre: "Fiction",
+      publisher: "HarperCollins",
+      status: "Available"
     },
     {
       _id: "2",
       title: "Rich Dad Poor Dad",
+      isbn: "9781612680194",
       author: "Robert Kiyosaki",
-      price: 350
+      totalCopies: 5,
+      genre: "Finance",
+      publisher: "Plata Publishing",
+      status: "Available"
     },
     {
       _id: "3",
       title: "Atomic Habits",
+      isbn: "9780735211292",
       author: "James Clear",
-      price: 450
+      totalCopies: 7,
+      genre: "Self-help",
+      publisher: "Avery",
+      status: "Available"
     }
   ];
 
