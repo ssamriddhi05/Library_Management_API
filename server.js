@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const bookRoutes = require("./routes/bookRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
+const Book = require("./models/Book");
 
 dotenv.config();
 
