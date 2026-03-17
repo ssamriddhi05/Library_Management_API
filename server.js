@@ -21,8 +21,28 @@ app.get("/", (req, res) => {
   res.send("Library API Running");
 });
 
-app.get("/books", async (req, res) => {
-  const books = await Book.find();
+app.get("/books", (req, res) => {
+  const books = [
+    {
+      _id: "1",
+      title: "The Alchemist",
+      author: "Paulo Coelho",
+      price: 299
+    },
+    {
+      _id: "2",
+      title: "Rich Dad Poor Dad",
+      author: "Robert Kiyosaki",
+      price: 350
+    },
+    {
+      _id: "3",
+      title: "Atomic Habits",
+      author: "James Clear",
+      price: 450
+    }
+  ];
+
   res.json(books);
 });
 
