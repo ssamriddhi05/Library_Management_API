@@ -21,6 +21,8 @@ app.get("/", (req, res) => {
   res.send("Library API Running");
 });
 
+app.set("json spaces", 2);
+
 app.get("/books", (req, res) => {
   const books = [
     {
