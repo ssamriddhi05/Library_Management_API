@@ -20,6 +20,11 @@ app.get("/", (req, res) => {
   res.send("Library API Running");
 });
 
+app.get("/books", async (req, res) => {
+  const books = await Book.find();
+  res.json(books);
+});
+
 app.use("/api", bookRoutes);
 
 app.use(errorHandler);
